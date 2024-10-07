@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Aftrglow222 - Home</title>
+    <title>Aftrglow222</title>
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css" />
     <!-- Google Fonts Roboto -->
@@ -13,99 +13,274 @@
     <link rel="stylesheet" href="css/mdb.min.css" />
 </head>
 <body>
-    <header>
-        <!-- Intro settings -->
-        <style>
-            /* ... (same styles as in events.html) ... */
-        </style>
+      <header>
+    <!-- Intro settings -->
+    <style>
+      body {
+        background-image:url('img/gradient.png');
+        background-attachment:fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #intro {
+        /* Margin to fix overlapping fixed navbar */
+        margin-top: 58px;
+      }
+      @media (max-width: 991px) {
+        #intro {
+          /* Margin to fix overlapping fixed navbar */
+          margin-top: 45px;
+        }
+      }
+      .nav-link-color,
+      .navbar-scroll .nav-link,
+      .navbar-scroll .fa-bars {
+        color: whitesmoke;
+      }
 
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #9E508B; color:whitesmoke">
-            <!-- ... (same navbar content as in events.html) ... -->
-        </nav>
-        <!-- Navbar -->
+      .navbar-scrolled .nav-link,
+      .navbar-scrolled .fa-bars {
+        color: whitesmoke;
+      }
 
-        <!-- Jumbotron -->
-        <div id="intro" class="p-5 text-center shadow-2-strong" style="background-color: #9E508B">
-            <img src="img/afterglow.png" class="img-fluid" alt="Maggie" width="271" height="121"/>
+
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #9E508B; color:whitesmoke">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand" target="_blank" href="#home">
+          <img src="img/A2.ico" height="16" alt="" loading="lazy"
+            style="margin-top: -3px;" />
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarExample01"
+          aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link nav-link-color" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-color" href="#events" rel="nofollow"
+                target="_blank">Events</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-color" href="#privates" target="_blank">Privates</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-color" href="#hire" target="_blank">Hire Maggie</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav d-flex flex-row">
+            <!-- Icons -->
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link nav-link-color" href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
+                target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link nav-link-color" href="https://twitter.com/MDBootstrap" rel="nofollow" target="_blank">
+                <i class="fab fa-tiktok"></i>
+              </a>
+            <li class="nav-item me-3 me-lg-0">
+              <a class="nav-link nav-link-color" href="https://www.facebook.com/mdbootstrap" rel="nofollow" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </li>
+          </ul>
         </div>
-        <!-- Jumbotron -->
-    </header>
+      </div>
+    </nav>
+    <!-- Navbar -->
 
-    <!--Main layout-->
-    <main class="my-5">
-        <div class="container">
-            <!--Section: Content-->
-            <section class="text-center">
-                <h2 class="mb-5"><strong>Welcome to Aftrglow222</strong></h2>
-                
-                <div class="row">
-                    <div class="col-lg-4 col-md-12 mb-4">
-                        <div class="card">
-                            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
-                                <img src="img/poster1.png" class="img-fluid" />
-                                <a href="events.html">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Upcoming Events</h5>
-                                <p class="card-text">
-                                    Check out our exciting lineup of mat events hosted by Maggie.
-                                </p>
-                                <a href="events.html" class="btn btn-primary" data-mdb-ripple-init>View Events</a>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Jumbotron -->
+    <div id="intro" class="p-5 text-center shadow-2-strong" style="background-color: #9E508B">
+      <img src="img/afterglow.png" class="img-fluid" alt="Maggie" width="271" height="121"/>
+    </div>
+    <!-- Jumbotron -->
+  </header>
+  <!--Main Navigation-->
 
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card">
-                            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
-                                <img src="img/poster2.png" class="img-fluid" />
-                                <a href="#!">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Private Sessions</h5>
-                                <p class="card-text">
-                                    Book a one-on-one session with Maggie for personalized instruction.
-                                </p>
-                                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Learn More</a>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card">
-                            <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
-                                <img src="img/poster1.png" class="img-fluid" />
-                                <a href="#!">
-                                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                                </a>
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Hire Maggie</h5>
-                                <p class="card-text">
-                                    Bring Maggie's expertise to your event or studio.
-                                </p>
-                                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Contact Us</a>
-                            </div>
-                        </div>
-                    </div>
+
+
+
+
+  <!--Main layout-->
+  <main class="my-5">
+    <div class="container">
+
+
+      <!--Section: Home-->
+      <div class="text-center" id="home">
+        <div class="row">
+          <div class="col-md-6">
+            <!--call to action card-->
+            <div class="h-100 card mt-2 mb-3">
+              <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                <img src="img/poster1.png" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                  We offer themed mat classes for all levels of experience. Come and join the fun.
+                </p>
+                <a href="#events" class="btn btn-primary" data-mdb-ripple-init>See Events</a>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <!--hire me card-->
+              <div class="h-100 card mt-2 mb-3">
+                <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                  
+                  
                 </div>
-            </section>
-            <!--Section: Content-->
-        </div>
-    </main>
-    <!--Main layout-->
+                <div class="card-body">
+                  <form style="width: 23rem;">
+                    <!-- Name input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="text" id="form4Example1" class="form-control" />
+                      <label class="form-label" for="form4Example1">Name</label>
+                    </div>
+  
+                    <!-- Email input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <input type="email" id="form4Example2" class="form-control" />
+                      <label class="form-label" for="form4Example2">Email address</label>
+                    </div>
+  
+                    <!-- Message input -->
+                    <div data-mdb-input-init class="form-outline mb-4">
+                      <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                      <label class="form-label" for="form4Example3">Message</label>
+                    </div>
+  
+                    <!-- Submit button -->
+                    <button data-mdb-ripple-init type="button" class="btn btn-block mb-4" style="background-color: #C75B7C; color: whitesmoke;">Send</button>
+                  </form>
 
-    <!--Footer-->
-    <footer class="bg-light text-lg-start">
-        <!-- ... (same footer content as in events.html) ... -->
-    </footer>
-    <!--Footer-->
-    
+
+                </div>
+              </div>
+
+              
+          </div>
+        </div>
+      </div><!--Section: Home-->
+
+
+
+
+
+
+
+      <!--Section: Events-->
+      <section class="text-center" id="events">
+        <h4 class="mb-5"><strong>Next Mat Events Hosted by Maggie</strong></h4>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                <img src="img/poster1.png" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Wake Up and Work</h5>
+                <p class="card-text">
+                  August 20, 2024 at 10AM
+                  3 Floral Lane, New York, NY 10011
+                  $50.00 per person
+                </p>
+                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Register</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                <img src="img/poster2a.png" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Bake the Cake</h5>
+                <p class="card-text">
+                  August 20, 2024 at 10AM
+                  3 Floral Lane, New York, NY 10011
+                  $50.00 per person
+                </p>
+                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Register</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay" data-mdb-ripple-init data-mdb-ripple-color="light">
+                <img src="img/poster1.png" class="img-fluid" />
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Wake Up and Work</h5>
+                <p class="card-text">
+                  August 20, 2024 at 10AM
+                  3 Floral Lane, New York, NY 10011
+                  $50.00 per person
+                </p>
+                <a href="#!" class="btn btn-primary" data-mdb-ripple-init>Register</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section><!--Section: Events-->
+
+      <!--Section: Privates-->  
+      <section class="text-center" id="privates">
+        <h4 class="mb-5"><strong>Privates</strong></h4>
+        <p>We also host private events for our friends and family.</p>
+      </section><!--Section: Privates-->
+
+      <!--Section: Hire Maggie-->
+      <section class="text-center" id="hire">
+        <h4 class="mb-5"><strong>Hire Maggie</strong></h4>
+        <p>We also host private events for our friends and family.</p>
+      </section><!--Section: Hire Maggie-->
+
+      
+      <!--Section: Content-->
+    </div>
+  </main>
+  <!--Main layout-->
+
+
+
+
+
+  <!--Footer-->
+  <footer class="bg-light text-lg-start">
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2024 Copyright:
+      <a class="text-dark" href="https://aftrglow222.live/">Aftrglow222</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
     <!-- MDB -->
     <script type="text/javascript" src="js/mdb.umd.min.js"></script>
 </body>
